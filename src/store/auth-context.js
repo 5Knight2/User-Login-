@@ -29,7 +29,7 @@ const AuthContext=React.createContext(
             localStorage.removeItem('isLoggedIn')
             setIsLoggedIn(false);
           };
-        return( <AuthContext.Provider value={{isLoggedIn:isLoggedIn,onLogout:logoutHandler,onLogIn:loginHandler}}>{props.children}</AuthContext.Provider>
+        return( <AuthContext.Provider value={{isLoggedIn:isLoggedIn,onLogout:logoutHandler,onLogin:loginHandler}}>{props.children}</AuthContext.Provider>
     )}
 
 export default  AuthContext;
