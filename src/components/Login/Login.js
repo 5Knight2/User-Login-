@@ -84,7 +84,7 @@ const [passwordState,dispatchPassword]=useReducer((prevState,action)=>{
 
   const submitHandler = (event) => {
     event.preventDefault();
-    props.onLogin(emailState.value, passwordState.value);
+    ctx.onLogin(emailState.value, passwordState.value);
   };
 
   return (
