@@ -8,11 +8,11 @@ import AuthContext from '../../store/auth-context';
 
 
 const Home = (props) => {
-  const ctx=useContext(AuthContext);
+  const ctxAuth=useContext(AuthContext);
   return (
     <Card className={classes.home}>
       <h1>Welcome back!</h1>
-     <Button onClick={ctx.onLogout}>LogOut</Button>
+     <Button onClick={ctxAuth.onLogout}>LogOut</Button>
     </Card>
   );
 };
